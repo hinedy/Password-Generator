@@ -27,7 +27,7 @@ main {
 }
 
 .wrapper {
-    margin: 0px 0 0 50px;
+    margin: 90px 0 0 0px;
 }
 
 h1 {
@@ -111,6 +111,7 @@ hr {
     justify-content:center;
 }
 .password {
+    font-family: 'Inter';
     width: 211px;
     height: 39px;
     background: #DDD6FE;
