@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Generate a <br><span class="accent">random password</span></h1>
+            <h3>Never use an insecure password again.</h3>
+            <div class="csontainer">
+                <span class="options">
+                    <input id="alpha" type="checkbox" checked >
+                    <label for="alpha" >Alphabet</label>
+                </span>
+                <span class="options">
+                    <input id="numbers" type="checkbox" checked>
+                    <label for="numbers" >Numbers</label>
+                </span>
+                <span class="options">
+                    <input id="symbols" type="checkbox" checked>
+                    <label for="symbols" >Symbols</label>
+                </span>
+            </div>
+            <div class="length">
+                <label for="length">Specify Password length</label>
+                <span class="range">
+                    <input id="length" type="range" min="8" max="20" oninput="showVal(this.value)">
+                    <p id="range-el"></p>
+                </span>
+                
+            </div>
+            <button id="generator" onclick="newPass()">Generate Passwords</button>
+        </div>
+        <hr>    
+        <div class="container">
+            <button id="pass-1" class="password" onclick="navigator.clipboard.writeText(this.textContent)"></button>
+            <button id="pass-2" class="password" onclick="navigator.clipboard.writeText(this.textContent)"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+

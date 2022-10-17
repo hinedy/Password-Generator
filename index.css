@@ -1,0 +1,117 @@
+:root {
+    --bg-color: #D1D5DB;
+    --main-color: #2B283A ;
+    --accent-color: #5B21B6; 
+}
+
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  src: url(fonts/karla-v23-latin-800.ttf)
+}
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  src: url(fonts/Inter.ttf)
+}
+
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+}
+
+.wrapper {
+    margin: 90px 0 0 50px;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+label {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #6B7280;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6B7280;
+    margin-top: 0px;
+}
+.options {
+    margin: 0 10px 20px 10px;
+}
+
+input[type=checkbox] {
+  accent-color: var(--accent-color);
+}
+
+.length {
+    margin-top: 10px;
+}
+
+input[type=range] {
+    width: 200px;
+    height: 30px;
+    margin: px 20px;
+    accent-color: var(--accent-color);
+    outline: none;
+    opacity: 0.7;
+}
+
+#length:hover {
+  opacity: 1; 
+}
+
+#range-el {
+    display: inline;
+}
+
+#generator {
+    width: 191px;
+    height: 42px;
+    background: var(--accent-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    margin-top: 15px
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #D5D4D8;
+    margin: 35px auto;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+}
+.password {
+    width: 211px;
+    height: 39px;
+    background: #DDD6FE;
+    border-radius: 6px;
+    color: var(--accent-color);
+}
+#pass-1 { 
+    margin-right: 24px;
+}
